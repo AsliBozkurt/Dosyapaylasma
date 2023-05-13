@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+{% load static  base_tags  i18n widget_tweaks%}
+
+{% block head_title %}{{title}}{% endblock %}
+
+{% block content %}
+
+<!-- Navbar -->
+<header>
+    <div class="container-fluid">
+        <div class="border-bottom pt-6">
+            <div class="row align-items-center">
+                <div class="col-sm-6 col-12">
+                <!-- Title -->
+                    <h1 class="h2 ls-tight">
+                        {{title}}
+                    </h1>
+                </div>
+                <!-- Actions -->
+                <div class="col-sm-6 col-12"></div>
+            </div>
+                    
+            <!-- Nav -->
+            {% include "users/menu/user_profile.html" %}
+                    
+         </div>
+    </div>
+</header>
+
+
+<main class="py-6 bg-surface-secondary">
+                    
+<div class="container-fluid max-w-screen-md vstack gap-6">
+                 <!-- Profile picture -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <h4 class="mb-1">{% trans "Profile photo" %}</h4>
+                            <p class="text-sm text-muted">
+                                {% trans "Our app has built-in gravatar support and automatically displays users' avatars. If you want, you can upload your own photo or use your profile picture from Gravatar." %}
+                            </p>
+                        </div>
+
+
+
+                        
+                        <div id="app">
+                            <app></app>
+                        </div>
+                        {% render_bundle 'user_profile_avatar' "js" %}
+
+                       
+
+                    </div>
+                </div>
+               
+
+                 <!-- Contact Information -->
+                <div class="card">
+                    <div class="card-body">
+                       
+                        <div class="mb-5">                            
+                            <h4 class="mb-1">{% trans "Contact Information" %}</h4>
+                        </div>
+                        <form class="vstack gap-5" method="post">
+                            {% csrf_token %}
+                            <div class="row g-5">
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{user_form.first_name.label}}</label>
+                                        {% render_field user_form.first_name class="form-control" placeholder=user_form.first_name.label  %}
+                                            {% if user_form.first_name.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in user_form.first_name.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+
+
+                                
+
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{user_form.last_name.label}}</label>
+                                        {% render_field user_form.last_name class="form-control" placeholder=user_form.last_name.label  %}
+                                            {% if user_form.last_name.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in user_form.last_name.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+                               
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{profile_form.phone.label}}</label>
+                                        {% render_field profile_form.phone class="form-control" placeholder=profile_form.phone.label  %}
+                                            {% if profile_form.phone.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in profile_form.phone.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div>
+                                        <label class="form-label">{{profile_form.address.label}}</label>
+                                        {% render_field profile_form.address class="form-control" placeholder=profile_form.address.label  %}
+                                            {% if profile_form.address.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in profile_form.address.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{profile_form.city.label}}</label>
+                                        {% render_field profile_form.city class="form-control" placeholder=profile_form.city.label  %}
+                                            {% if profile_form.city.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in profile_form.city.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{profile_form.country.label}}</label>
+                                        {% render_field profile_form.country class="form-control" placeholder=profile_form.country.label  %}
+                                            {% if profile_form.country.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in profile_form.country.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+                                
+                            
+
+                                <div class="col-md-6">
+                                    <div>
+                                        <label class="form-label">{{profile_form.timezone.label}}</label>
+                                        {% render_field profile_form.timezone class="form-select" placeholder=profile_form.timezone.label  %}
+                                        <div class="form-text">{{profile_form.timezone.help_text}}</div>
+                                            {% if profile_form.timezone.errors %}
+                                                <ul class="form-errors" style="color:red">
+                                                {% for error in profile_form.timezone.errors %}
+                                                    <li>{{ error|escape }}</li>
+                                                {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="col-12 text-end">
+                                    <button type="button" class="btn btn-sm btn-neutral me-2">{% trans "Cancel" %}</button>
+                                    <button type="submit" class="btn btn-sm btn-primary">{% trans "Submit" %}</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+
+
+
+                
+</div>
+            
+</main>
+
+
+
+{% endblock %}
+
+
+{% block templateCSS %}
+{% render_bundle 'user_profile_avatar' 'css' %}
+{% endblock %}
+
+{% block templateJS %}{% endblock %}
+
+

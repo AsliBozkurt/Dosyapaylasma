@@ -1,0 +1,1337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-10 12:01+0300\n"
+"PO-Revision-Date: 2023-03-10 12:03+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: api/views/campaigns.py:127
+msgid "Campaign scheduling has been cancelled."
+msgstr ""
+
+#: api/views/campaigns.py:309 api/views/campaigns.py:314
+msgid "Not found"
+msgstr ""
+
+#: api/views/campaigns.py:352
+msgid "The campaign cannot be sent. Please check your plan"
+msgstr ""
+
+#: api/views/campaigns.py:358
+msgid "One campaign can be sent at the same time."
+msgstr ""
+
+#: api/views/campaigns.py:378
+msgid "Preparing to sent"
+msgstr ""
+
+#: api/views/campaigns.py:471
+msgid "The test email cannot be sent. Please check your plan."
+msgstr ""
+
+#: api/views/campaigns.py:525 superuser/views.py:75
+msgid "Sent successfully"
+msgstr "Başarıyla gönderildi"
+
+#: api/views/campaigns.py:562
+msgid "The sending task paused"
+msgstr ""
+
+#: api/views/campaigns.py:602
+msgid "Campaign is being send"
+msgstr ""
+
+#: api/views/campaigns.py:1198
+msgid "Open"
+msgstr ""
+
+#: api/views/campaigns.py:1216
+msgid "Click"
+msgstr ""
+
+#: api/views/subscribers.py:156
+#, fuzzy
+#| msgid "Upgrade your plan"
+msgid "Please check your plan"
+msgstr "Plan yükselt"
+
+#: api/views/subscribers.py:879 templates/subscribers/include/menu.html:8
+msgid "Groups"
+msgstr "Gruplar"
+
+#: bahar/settings.py:310
+msgid "English"
+msgstr ""
+
+#: bahar/settings.py:311
+msgid "Turkish"
+msgstr ""
+
+#: bahar/validators.py:12 bahar/validators.py:18
+msgid "At least one number character : 0-9."
+msgstr ""
+
+#: bahar/validators.py:26 bahar/validators.py:32
+msgid "At least one uppercase character : A-Z."
+msgstr ""
+
+#: bahar/validators.py:40 bahar/validators.py:46
+msgid "At least one lowercase character : a-z."
+msgstr ""
+
+#: bahar/validators.py:54 bahar/validators.py:60
+msgid "At least one symbol character :()[]{}|\\`~!@#$%^&*_-+=;:'\",<>./?"
+msgstr ""
+
+#: base/models.py:11 billing/models.py:148 billing/models.py:175
+#: vendors/models.py:11
+msgid "Name"
+msgstr ""
+
+#: base/models.py:12
+msgid "Code"
+msgstr ""
+
+#: base/models.py:15 reseller/models.py:58
+msgid "Country"
+msgstr "Ülke"
+
+#: base/models.py:16
+msgid "Countries"
+msgstr "Ülkeler"
+
+#: base/views.py:23
+msgid "Base fields"
+msgstr "Temel alanlar"
+
+#: billing/forms.py:10 users/models.py:100
+msgid "First name"
+msgstr "Adı"
+
+#: billing/forms.py:11 users/models.py:101
+msgid "Last name"
+msgstr "Soyadı"
+
+#: billing/forms.py:12 reseller/models.py:55 users/models.py:63
+#: users/models.py:103 users/models.py:119
+msgid "Address"
+msgstr "Adres"
+
+#: billing/forms.py:13 users/models.py:64 users/models.py:104
+#: users/models.py:120
+msgid "City"
+msgstr "Şehir"
+
+#: billing/forms.py:14 users/models.py:106
+msgid "Zip code"
+msgstr "Posta kodu"
+
+#: billing/models.py:14
+msgid "Added Funds"
+msgstr ""
+
+#: billing/models.py:17 billing/models.py:25 billing/models.py:106
+#: billing/models.py:150
+msgid "USD"
+msgstr ""
+
+#: billing/models.py:22
+msgid "Funds Used"
+msgstr ""
+
+#: billing/models.py:29 billing/models.py:204
+msgid "Log"
+msgstr ""
+
+#: billing/models.py:30
+msgid "Comment"
+msgstr ""
+
+#: billing/models.py:31
+#, fuzzy
+#| msgid "Active"
+msgid "Action"
+msgstr "Aktif"
+
+#: billing/models.py:31 billing/models.py:131
+msgid "1 Email, 2 SMS"
+msgstr ""
+
+#: billing/models.py:32 subscribers/models.py:206
+#: templates/vendors/connection_list.html:53
+#, fuzzy
+#| msgid "Stats"
+msgid "Status"
+msgstr "İstatistikler"
+
+#: billing/models.py:40 billing/models.py:41
+#, fuzzy
+#| msgid "reseller logo"
+msgid "Reseller Credit"
+msgstr "reseller logo"
+
+#: billing/models.py:48 billing/models.py:106 billing/models.py:150
+msgid "Price"
+msgstr ""
+
+#: billing/models.py:49 billing/models.py:82 billing/models.py:108
+#: billing/models.py:132 billing/models.py:154 billing/models.py:176
+#: billing/models.py:207 campaigns/models.py:225 campaigns/models.py:244
+#: specialdays/models.py:20 subscribers/models.py:105 subscribers/models.py:169
+#: subscribers/models.py:210 vendors/models.py:17 vendors/models.py:92
+#: vendors/models.py:137
+msgid "Active"
+msgstr "Aktif"
+
+#: billing/models.py:57 billing/models.py:58
+msgid "Email Packet Price"
+msgstr ""
+
+#: billing/models.py:68 billing/models.py:105
+msgid "Packet Name"
+msgstr ""
+
+#: billing/models.py:71
+#, fuzzy
+#| msgid "Email design"
+msgid "Email Limit"
+msgstr "Eposta tasarımı"
+
+#: billing/models.py:71 billing/models.py:74 billing/models.py:77
+msgid "0 unlimited."
+msgstr ""
+
+#: billing/models.py:74
+msgid "Email Send Limit"
+msgstr ""
+
+#: billing/models.py:77
+msgid "Email Verify Limit"
+msgstr ""
+
+#: billing/models.py:79 billing/models.py:202
+msgid "Packet Type"
+msgstr ""
+
+#: billing/models.py:80 billing/models.py:203
+msgid "The period of validity"
+msgstr ""
+
+#: billing/models.py:81 billing/models.py:107
+msgid "Sort"
+msgstr ""
+
+#: billing/models.py:93 billing/models.py:94
+msgid "Email Packet"
+msgstr ""
+
+#: billing/models.py:119 billing/models.py:120
+#, fuzzy
+#| msgid "reseller logo"
+msgid "Reseller Email Packet"
+msgstr "reseller logo"
+
+#: billing/models.py:128
+msgid "Credit"
+msgstr ""
+
+#: billing/models.py:129
+msgid "Used"
+msgstr ""
+
+#: billing/models.py:130
+#, fuzzy
+#| msgid "Active"
+msgid "Activity"
+msgstr "Aktif"
+
+#: billing/models.py:131
+msgid "Type"
+msgstr ""
+
+#: billing/models.py:140 billing/models.py:141
+msgid "Customer Credit Info"
+msgstr ""
+
+#: billing/models.py:152 billing/models.py:173 billing/models.py:200
+#: subscribers/views.py:30 subscribers/views.py:43 subscribers/views.py:64
+#: subscribers/views.py:84 subscribers/views.py:102 subscribers/views.py:124
+#: subscribers/views.py:139 subscribers/views.py:168 subscribers/views.py:180
+#: subscribers/views.py:192 templates/includes/sidebar.html:79
+#: templates/subscribers/fields.html:20 templates/subscribers/groups.html:22
+#: templates/subscribers/history.html:20 templates/subscribers/home.html:16
+msgid "Subscribers"
+msgstr "Aboneler"
+
+#: billing/models.py:153 billing/models.py:174 billing/models.py:201
+#: templates/account/signup copy.html:40 templates/account/signup.html:41
+#: templates/users/notification.html:65
+msgid "Email"
+msgstr ""
+
+#: billing/models.py:164 templates/billing/menu/billing.html:4
+msgid "Plan"
+msgstr ""
+
+#: billing/models.py:165
+msgid "Plans"
+msgstr ""
+
+#: billing/models.py:185 billing/models.py:186
+#, fuzzy
+#| msgid "reseller logo"
+msgid "Reseller plan"
+msgstr "reseller logo"
+
+#: billing/models.py:205
+msgid "Start date"
+msgstr ""
+
+#: billing/models.py:206 specialdays/models.py:18
+msgid "End date"
+msgstr ""
+
+#: billing/models.py:213
+#, fuzzy
+#| msgid "Upgrade your plan"
+msgid "User plan"
+msgstr "Plan yükselt"
+
+#: billing/models.py:214
+msgid "User plans"
+msgstr ""
+
+#: billing/serializers.py:38
+msgid "Primary price defined"
+msgstr ""
+
+#: billing/serializers.py:44
+msgid "This data has been previously recorded. It cannot be recorded again."
+msgstr "Bu veri daha önce kayıt edilmiş. Tekrar kaydedilemez."
+
+#: billing/views.py:33 billing/views.py:44
+#: templates/includes/sidebar_account_settigns.html:65
+msgid "Plan and Billing"
+msgstr "Plan ve Faturalandırma"
+
+#: billing/views.py:51 home/views.py:99 users/views.py:62 users/views.py:89
+#: users/views.py:115
+msgid "Successfully Saved"
+msgstr "Başarıyla kaydedildi"
+
+#: billing/views.py:54 home/views.py:102 users/views.py:65 users/views.py:92
+#: users/views.py:118
+msgid "Please correct the wrong places"
+msgstr "Lütfen yanlış yerleri düzeltin"
+
+#: billing/views.py:70 templates/billing/menu/billing.html:11
+#: templates/billing/payment_methods_error.html:45
+msgid "Payment methods"
+msgstr "Ödeme yöntemi"
+
+#: campaigns/models.py:223
+msgid "Cat Name Turkish"
+msgstr ""
+
+#: campaigns/models.py:224
+msgid "Cat Name Eng"
+msgstr ""
+
+#: campaigns/models.py:229 campaigns/models.py:230
+msgid "Template Cat"
+msgstr ""
+
+#: campaigns/models.py:238
+msgid "Template Tr"
+msgstr ""
+
+#: campaigns/models.py:239
+msgid "Template En"
+msgstr ""
+
+#: campaigns/models.py:242
+msgid "Image"
+msgstr ""
+
+#: campaigns/models.py:250 campaigns/models.py:251
+msgid "Topol Template"
+msgstr ""
+
+#: campaigns/models.py:264
+msgid ""
+"It automatically adds the Unsubscribe link to the end of sent campaigns."
+msgstr ""
+
+#: campaigns/models.py:267
+#, fuzzy
+#| msgid "All subscribers"
+msgid "Global Unsubscribe Link"
+msgstr "Tüm aboneler"
+
+#: campaigns/models.py:271 campaigns/models.py:272
+#, fuzzy
+#| msgid "Campaigns"
+msgid "Campaigns Settings"
+msgstr "Kampanyalar"
+
+#: campaigns/views.py:27 campaigns/views.py:38 campaigns/views.py:49
+#: campaigns/views.py:60 templates/includes/sidebar.html:58
+msgid "Campaigns"
+msgstr "Kampanyalar"
+
+#: campaigns/views.py:71
+msgid "New campaign"
+msgstr ""
+
+#: campaigns/views.py:87 campaigns/views.py:89
+msgid "Campaign details"
+msgstr "Kampanya detayı"
+
+#: campaigns/views.py:103 campaigns/views.py:106 campaigns/views.py:342
+#: campaigns/views.py:351
+msgid "Email design"
+msgstr "Eposta tasarımı"
+
+#: campaigns/views.py:137 templates/campaigns/menu/breadcrumb.html:13
+#: templates/campaigns/menu/breadcrumb.html:26
+#: templates/campaigns/menu/breadcrumb.html:41
+#: templates/campaigns/menu/breadcrumb.html:58
+#: templates/campaigns/menu/breadcrumb.html:76
+msgid "Schedule"
+msgstr "Takvim"
+
+#: campaigns/views.py:149 templates/campaigns/menu/breadcrumb.html:11
+#: templates/campaigns/menu/breadcrumb.html:24
+#: templates/campaigns/menu/breadcrumb.html:38
+#: templates/campaigns/menu/breadcrumb.html:53
+#: templates/campaigns/menu/breadcrumb.html:70
+msgid "Recipients"
+msgstr "Alıcılar"
+
+#: campaigns/views.py:161 campaigns/views.py:173 campaigns/views.py:185
+#: campaigns/views.py:198 campaigns/views.py:211 campaigns/views.py:224
+#: campaigns/views.py:238 campaigns/views.py:252 campaigns/views.py:265
+msgid "Review and confirm"
+msgstr "Gözden geçir ve onayla"
+
+#: cm/apps.py:8
+msgid "CharmainsMessage.com"
+msgstr ""
+
+#: cm/models.py:7
+#, fuzzy
+#| msgid "Main Page"
+msgid "Page"
+msgstr "Ana Sayfa"
+
+#: cm/models.py:8
+#, fuzzy
+#| msgid "Content"
+msgid "content"
+msgstr "İçerik"
+
+#: cm/models.py:11 cm/models.py:12
+msgid "Multi Language Text"
+msgstr ""
+
+#: reseller/models.py:28
+msgid "Notification Email Title"
+msgstr ""
+
+#: reseller/models.py:28 reseller/models.py:34 reseller/models.py:46
+msgid "Used for notification"
+msgstr ""
+
+#: reseller/models.py:40
+msgid "Help Email"
+msgstr ""
+
+#: reseller/models.py:49
+msgid "reseller logo"
+msgstr "reseller logo"
+
+#: reseller/models.py:53 reseller/models.py:54
+msgid "Phone"
+msgstr "Telefon"
+
+#: reseller/models.py:56
+msgid "District"
+msgstr "İlçe"
+
+#: reseller/models.py:57
+msgid "Province"
+msgstr ""
+
+#: specialdays/apps.py:8 specialdays/models.py:29 specialdays/models.py:30
+msgid "Special Days"
+msgstr "Özel Günler"
+
+#: specialdays/models.py:15
+msgid "Title"
+msgstr "Başlık"
+
+#: specialdays/models.py:16 templates/campaigns/menu/breadcrumb.html:10
+#: templates/campaigns/menu/breadcrumb.html:22
+#: templates/campaigns/menu/breadcrumb.html:35
+#: templates/campaigns/menu/breadcrumb.html:50
+#: templates/campaigns/menu/breadcrumb.html:67
+msgid "Content"
+msgstr "İçerik"
+
+#: specialdays/models.py:17
+msgid "Date"
+msgstr ""
+
+#: subscribers/models.py:76
+msgid "Equals"
+msgstr ""
+
+#: subscribers/models.py:77
+msgid "Not equals"
+msgstr ""
+
+#: subscribers/models.py:78
+#, fuzzy
+#| msgid "Content"
+msgid "Contains"
+msgstr "İçerik"
+
+#: subscribers/models.py:79
+msgid "Dos not contains"
+msgstr ""
+
+#: subscribers/models.py:80
+msgid "Starts with"
+msgstr ""
+
+#: subscribers/models.py:81
+msgid "Ends with"
+msgstr ""
+
+#: subscribers/models.py:106 subscribers/models.py:170
+#, fuzzy
+#| msgid "Subscribers"
+msgid "Unsubscribe"
+msgstr "Aboneler"
+
+#: subscribers/models.py:190
+msgid "Upload File Type"
+msgstr ""
+
+#: subscribers/models.py:216 templates/vendors/connection_list.html:101
+msgid "Update"
+msgstr ""
+
+#: subscribers/models.py:226 subscribers/models.py:227
+msgid "Subscriber Import"
+msgstr "Abone ekle"
+
+#: subscribers/serializers.py:102
+msgid "Email is registered"
+msgstr ""
+
+#: superuser/views.py:50 templates/includes/sidebar_superuser.html:58
+msgid "Plan management"
+msgstr ""
+
+#: templates/account/login.html:6
+msgid "Sign In"
+msgstr "Kayıt ol"
+
+#: templates/account/login.html:19 templates/home/welcome.html:7
+#: templates/home/welcome_cm.html:7
+msgid "Welcome"
+msgstr "Hoşgeldiniz"
+
+#: templates/account/login.html:38
+msgid "Username or e-mail"
+msgstr "Kullanıcı adı yada e-mail"
+
+#: templates/account/login.html:53 templates/account/signup copy.html:64
+#: copy.html:76 templates/account/signup.html:65
+#: templates/account/signup.html:77 templates/users/menu/user_profile.html:7
+msgid "Password"
+msgstr "Parola"
+
+#: templates/account/login.html:56 templates/base/email/notify.html:197
+msgid "Forgot Password?"
+msgstr "Parolamı unuttum?"
+
+#: templates/account/login.html:72
+msgid "Login"
+msgstr "Giriş"
+
+#: templates/account/login.html:79
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"                      <a href=\"%(signup_url)s\" class=\"text-warning text-"
+"sm font-semibold\">sign up</a> first."
+msgstr ""
+"Henüz bir hesap oluşturmadıysanız, lütfen önce <a href=%(signup_url)s "
+"class=text-warning text-sm font-semibold>kaydolun</a>."
+
+#: templates/account/logout.html:7 templates/account/logout.html:17
+#: templates/account/logout.html:41 templates/includes/content_header.html:125
+#: templates/includes/sidebar.html:40 templates/includes/sidebar.html:153
+#: templates/includes/sidebar_account_settigns.html:39
+#: templates/includes/sidebar_account_settigns.html:122
+#: templates/includes/sidebar_superuser.html:39
+#: templates/includes/sidebar_superuser.html:112
+msgid "Sign Out"
+msgstr "Çıkış"
+
+#: templates/account/logout.html:33
+msgid "Are you sure you want to sign out?"
+msgstr "Çıkmak istediğinizden emin misiniz?"
+
+#: templates/account/password_change copy.html:5
+#: templates/account/password_change.html:5
+#: templates/account/password_change.html:45
+#: templates/account/password_change.html:89
+msgid "Change Password"
+msgstr "Parola değiştir"
+
+#: templates/account/password_change copy.html:72
+#: templates/account/password_reset.html:67
+#: templates/billing/information_form.html:153
+#: templates/campaigns/start_from_scratch_2.html:100
+#: templates/users/company_profile_form.html:154
+#: templates/users/notification.html:117
+#: templates/users/profile_update_form.html:197
+msgid "Submit"
+msgstr "Gönder"
+
+#: templates/account/password_change copy.html:84
+msgid "Eski parolanızı hatırlamıyorsanız yeni bir parola talep edebilirsiniz."
+msgstr ""
+
+#: templates/account/password_change copy.html:84
+msgid "Eski Parolamı Gönder"
+msgstr ""
+
+#: templates/account/password_change.html:21
+#, fuzzy
+#| msgid "Change Password"
+msgid "Change password"
+msgstr "Parola değiştir"
+
+#: templates/account/password_reset.html:5
+#: templates/account/password_reset.html:21
+msgid "Password Reset"
+msgstr "Parola resetle"
+
+#: templates/account/password_reset.html:73 templates/account/signup
+#: copy.html:117 templates/account/signup.html:117
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\" class=\"text-"
+"warning text-sm font-semibold\">sign in</a>."
+msgstr ""
+"Hesabınız var mı? Lütfen <a href=%(login_url)s class=text-warning text-sm "
+"font-semibold>oturum</a> açın."
+
+#: templates/account/signup copy.html:6 templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: templates/account/signup copy.html:19 templates/account/signup.html:19
+msgid "Create your account"
+msgstr "Hesap oluştur"
+
+#: templates/account/signup copy.html:52 templates/account/signup.html:53
+msgid "Username"
+msgstr "Kullanıcı adı"
+
+#: templates/account/signup copy.html:97 templates/account/signup.html:97
+msgid ""
+" By creating an account means you agree to the <a href=\"#\" class=\"text-"
+"warning text-sm font-semibold\">Terms and Conditions</a> and our <a href=\"#"
+"\" class=\"text-warning text-sm font-semibold\">Privacy Policy</a>"
+msgstr ""
+" Bir hesap oluşturmanız, <a href=# class=text-warning text-sm font-"
+"semibold>Şartlar ve Koşulları</a> ve <a href=# class=text-warning text-sm "
+"font-semibold>Gizlilik Politikamızı</a> kabul ettiğiniz anlamına gelir"
+
+#: templates/account/signup copy.html:110 templates/account/signup.html:110
+msgid "Sign Up"
+msgstr "Üye ol"
+
+#: templates/base.html:281
+msgid ""
+"You are in free plan. If you want to use your own domain/email upgrade your "
+"plan."
+msgstr ""
+"Ücretsiz plan kullanıyorsunuz. Kendi domain/email adresinizi kullanmak için "
+"lütfen planınızı yükseltin."
+
+#: templates/base.html:282
+msgid "Upgrade your plan"
+msgstr "Plan yükselt"
+
+#: templates/base.html:304 templates/base_superuser.html:276
+#: templates/base_welcome.html:295 templates/includes/content_header.html:138
+msgid "Change Language"
+msgstr "Dili Değiştir"
+
+#: templates/base.html:329 templates/base_superuser.html:301
+#: templates/base_welcome.html:320
+#: templates/campaigns/start_from_scratch_2.html:99
+#: templates/includes/content_header.html:163
+msgid "Close"
+msgstr "Kapat"
+
+#: templates/base.html:330 templates/base_superuser.html:302
+#: templates/base_welcome.html:321 templates/includes/content_header.html:164
+msgid "Save Changes"
+msgstr "Değişikliği Kaydet"
+
+#: templates/base/email/notify.html:209
+#, python-format
+msgid "%(site_name)s"
+msgstr ""
+
+#: templates/base/email/notify.html:224
+#, python-format
+msgid "%(site_name)s den Merhaba"
+msgstr ""
+
+#: templates/base/email/notify.html:256
+#, python-format
+msgid "%(site_name)s i kullandığınız için teşekkür ederiz."
+msgstr ""
+
+#: templates/base/email/notify.html:274
+#, python-format
+msgid "%(site_domain)s"
+msgstr ""
+
+#: templates/billing/information_form.html:44
+#: templates/billing/menu/billing.html:7
+#: templates/billing/payment_methods_error.html:48 users/models.py:109
+#: users/models.py:110
+msgid "Billing information"
+msgstr "Fatura bilgileri"
+
+#: templates/billing/information_form.html:45
+msgid "Information will be used to form invoices."
+msgstr "Buradaki bilgiler fatura oluşturmak için kullanılacaktır."
+
+#: templates/billing/menu/billing.html:14
+msgid "Invoices"
+msgstr "Faturalar"
+
+#: templates/billing/payment_methods_error.html:46
+msgid "Please fill billing information first here."
+msgstr "Lütfen önce burada fatura bilgilerini doldurun."
+
+#: templates/campaigns/home.html:25 templates/campaigns/status_draft.html:26
+#: templates/campaigns/status_outbox.html:26
+#: templates/campaigns/status_send.html:26
+msgid "Create new campaign"
+msgstr "Yeni bir kampanya oluştur"
+
+#: templates/campaigns/menu/breadcrumb.html:8
+#: templates/campaigns/menu/breadcrumb.html:19
+#: templates/campaigns/menu/breadcrumb.html:32
+#: templates/campaigns/menu/breadcrumb.html:47
+#: templates/campaigns/menu/breadcrumb.html:64
+msgid "Details"
+msgstr "Detay"
+
+#: templates/campaigns/menu/breadcrumb.html:12
+#: templates/campaigns/menu/breadcrumb.html:25
+#: templates/campaigns/menu/breadcrumb.html:40
+#: templates/campaigns/menu/breadcrumb.html:56
+#: templates/campaigns/menu/breadcrumb.html:73
+msgid "Review"
+msgstr "Gözden geçir"
+
+#: templates/campaigns/menu/cmp.html:5 templates/includes/sidebar.html:62
+msgid "Sent"
+msgstr "Gönderilen"
+
+#: templates/campaigns/menu/cmp.html:8 templates/includes/sidebar.html:65
+msgid "Drafts"
+msgstr "Taslaklar"
+
+#: templates/campaigns/menu/cmp.html:11 templates/includes/sidebar.html:68
+msgid "Outbox"
+msgstr "Giden"
+
+#: templates/campaigns/menu/recipients.html:4
+msgid "Basic"
+msgstr "Basit"
+
+#: templates/campaigns/menu/recipients.html:7
+msgid "Advanced"
+msgstr "Gelişmiş"
+
+#: templates/campaigns/menu/reports.html:4
+msgid "Owerview"
+msgstr "Genel bakış"
+
+#: templates/campaigns/menu/reports.html:7
+msgid "View email"
+msgstr "Eposta"
+
+#: templates/campaigns/menu/reports.html:10
+msgid "Subscriber activity"
+msgstr "Abone etkinliği"
+
+#: templates/campaigns/menu/reports.html:13
+msgid "Link activity"
+msgstr "Bağlantı etkinliği"
+
+#: templates/campaigns/menu/reports.html:16
+msgid "Bounce"
+msgstr ""
+
+#: templates/campaigns/menu/reports.html:19
+#, fuzzy
+#| msgid "Companies"
+msgid "Complaints"
+msgstr "Firmalar"
+
+#: templates/campaigns/menu/reports.html:22
+msgid "Unsubscribed"
+msgstr "Unsubscribed"
+
+#: templates/campaigns/menu/reports.html:25
+msgid "Location data"
+msgstr "Konum"
+
+#: templates/campaigns/menu/reports.html:28
+msgid "Device"
+msgstr "Cihazlar"
+
+#: templates/campaigns/menu/reports.html:31
+msgid "Log history"
+msgstr "Günlük"
+
+#: templates/campaigns/menu/start_from_scratch.html:4
+#: templates/campaigns/start_from_scratch_2.html:62
+msgid "Start from scratch"
+msgstr "Sıfırdan başla"
+
+#: templates/campaigns/menu/start_from_scratch.html:7
+msgid "Template gallery"
+msgstr "Hazır şablonlar"
+
+#: templates/campaigns/menu/start_from_scratch.html:11
+msgid "Recent emails"
+msgstr "Son gönderilen epostalar"
+
+#: templates/campaigns/reports/bounced.html:24
+#: templates/campaigns/reports/email.html:24
+#: templates/campaigns/reports/link_activity_clicked.html:24
+#: templates/campaigns/reports/link_activity_links.html:24
+#: templates/campaigns/reports/link_activity_opened.html:24
+#: templates/campaigns/reports/log_history.html:24
+#: templates/campaigns/reports/overview.html:24
+#: templates/campaigns/reports/subscriber_activity.html:24
+msgid "Sent on"
+msgstr "Gönderildi"
+
+#: templates/campaigns/start_from_scratch.html:48
+msgid "Drag & drop editor"
+msgstr "Sürükle & Bırak editör"
+
+#: templates/campaigns/start_from_scratch.html:51
+msgid ""
+"Our editor provides simple drag-and-drop block functionality while giving "
+"you more design flexibility and options."
+msgstr ""
+"Editörümüz, basit sürekle ve bırak özelliği ile size daha fazla tasarım "
+"esnekliği ve seçeneği sunar."
+
+#: templates/campaigns/start_from_scratch.html:55
+#: templates/campaigns/start_from_scratch_2.html:59
+msgid "Continue"
+msgstr "Devam"
+
+#: templates/campaigns/start_from_scratch_2.html:55
+msgid "Click here to work on the design prepared before"
+msgstr "Daha önce hazırlanan tasarım üzerinde çalışmak için tıklayınız"
+
+#: templates/campaigns/start_from_scratch_2.html:86
+msgid "Warning"
+msgstr "Uyarı"
+
+#: templates/campaigns/start_from_scratch_2.html:93
+msgid "The previous design will be deleted"
+msgstr "Önceki tasarım silinecek"
+
+#: templates/home/error.html:5 templates/home/error.html:20
+msgid "Error"
+msgstr "Hata"
+
+#: templates/home/error.html:22
+msgid "Please call customer service"
+msgstr "Lütfen müşteri hizmetlerini arayınız"
+
+#: templates/home/error.html:29 templates/home/unsubscribe.html:23
+msgid "Main Page"
+msgstr "Ana Sayfa"
+
+#: templates/home/unsubscribe.html:5 templates/home/unsubscribe.html:20
+msgid "You have unsubscribed from the e-mail list"
+msgstr "Eposta listesinden çıktınız"
+
+#: templates/home/welcome.html:18
+msgid "Welcome_1"
+msgstr "Hoş geldiniz, doğru yerdesiniz"
+
+#: templates/home/welcome.html:35
+msgid "Welcome_2"
+msgstr ""
+"Bu platform Dünya Standartları’nda e-posta göndermeniz ve bunu yaparken hem "
+"fiyat hem de kalite avantajını sizlere sunmak için geliştirildi"
+
+#: templates/home/welcome.html:38
+msgid "Welcome_3"
+msgstr ""
+"Sizlere daha iyi hizmet vermek için durmadan çalışıyor ve sürekli kendimizi "
+"geliştiriyoruz"
+
+#: templates/home/welcome.html:46 templates/home/welcome_cm.html:41
+msgid "So let's start"
+msgstr "Haydi başlayalım"
+
+#: templates/includes/content_header.html:122
+#: templates/includes/sidebar.html:37 templates/includes/sidebar.html:150
+#: templates/includes/sidebar_account_settigns.html:36
+#: templates/includes/sidebar_account_settigns.html:119
+#: templates/includes/sidebar_superuser.html:36
+#: templates/includes/sidebar_superuser.html:109 users/views.py:53
+msgid "My profile"
+msgstr "Profilim"
+
+#: templates/includes/sidebar.html:53
+msgid "Dashboard"
+msgstr ""
+
+#: templates/includes/sidebar.html:87
+#: templates/includes/sidebar_account_settigns.html:61 users/views.py:108
+msgid "Account settings"
+msgstr "Ayarlar"
+
+#: templates/includes/sidebar.html:91
+#: templates/includes/sidebar_account_settigns.html:69
+#: templates/vendors/connection_list.html:52
+#: templates/vendors/menu/vendors.html:7 vendors/views.py:41
+#: vendors/views.py:54 vendors/views.py:112
+msgid "ESP/SMTP Vendors"
+msgstr ""
+
+#: templates/includes/sidebar_account_settigns.html:50
+#: templates/includes/sidebar_superuser.html:50
+msgid "Back to Dashboard"
+msgstr "Dashboarda geri dön"
+
+#: templates/subscribers/err.html:14
+#: templates/subscribers/subscribers_create.html:17
+#: templates/subscribers/subscribers_import.html:17
+#: templates/subscribers/subscribers_import_copypaste.html:17
+msgid "Add new subscribers"
+msgstr "Yeni abone ekle"
+
+#: templates/subscribers/err.html:39
+#, fuzzy
+#| msgid "Subscriber Import"
+msgid "Subscribers import in progress"
+msgstr "Abone ekle"
+
+#: templates/subscribers/err.html:41
+msgid "Please wait for the import to finish"
+msgstr ""
+
+#: templates/subscribers/err.html:43 templates/subscribers/include/menu.html:19
+msgid "History"
+msgstr ""
+
+#: templates/subscribers/home.html:31
+msgid "Add subscribers"
+msgstr "Abone ekle"
+
+#: templates/subscribers/include/menu.html:5
+msgid "All subscribers"
+msgstr "Tüm aboneler"
+
+#: templates/subscribers/include/menu.html:11
+msgid "Fields"
+msgstr "Özel alanlar"
+
+#: templates/subscribers/include/menu.html:14
+msgid "Segments"
+msgstr "Segment"
+
+#: templates/subscribers/include/menu.html:17
+msgid "Stats"
+msgstr "İstatistikler"
+
+#: templates/subscribers/include/menu_add.html:5
+msgid "Import from a Excel file"
+msgstr "Excel’den içeri aktar"
+
+#: templates/subscribers/include/menu_add.html:8
+msgid "Copy/paste from Excel"
+msgstr "Excel’den kopyala yapıştır"
+
+#: templates/subscribers/include/menu_add.html:11
+msgid "Add single subscriber"
+msgstr "Tek abone ekle"
+
+#: templates/subscribers/subscribers_import_match_columns.html:17
+msgid "Import settings"
+msgstr ""
+
+#: templates/users/company_profile_form.html:43
+#: templates/users/menu/company_profile.html:4
+msgid "Company profile"
+msgstr "Firma profili"
+
+#: templates/users/company_profile_form.html:44
+msgid ""
+"The following information will help us automatically build your email "
+"footers to comply with the CAN-SPAM act and international anti-spam laws."
+msgstr ""
+
+#: templates/users/menu/company_profile.html:7
+msgid "Default settings"
+msgstr "Varsayılan ayarlar"
+
+#: templates/users/menu/company_profile.html:11
+msgid "Domains"
+msgstr ""
+
+#: templates/users/menu/user_profile.html:4
+msgid "General"
+msgstr "Genel"
+
+#: templates/users/menu/user_profile.html:11
+#: templates/users/notification.html:49 users/views.py:82
+msgid "Notifications"
+msgstr ""
+
+#: templates/users/notification.html:14
+#: templates/users/profile_update_form.html:14
+msgid ""
+"We have sent an e-mail to you for verification. If you do not see the "
+"verification e-mail in your main inbox, check your spam folder. Please "
+"resend if you do not receive the verification e-mail within a few minutes."
+msgstr ""
+"Doğrulama için size bir e-posta gönderdik. Ana gelen kutunuzda doğrulama e-"
+"postasını görmüyorsanız, spam klasörünüzü kontrol edin. Doğrulama e-"
+"postasını birkaç dakika içinde almazsanız lütfen tekrar gönderin."
+
+#: templates/users/notification.html:15
+#: templates/users/profile_update_form.html:15
+msgid "Re-send Verification"
+msgstr ""
+
+#: templates/users/notification.html:50
+msgid ""
+"By filling your notification you get a much better experience using our "
+"website."
+msgstr ""
+
+#: templates/users/notification.html:62
+msgid "Call"
+msgstr ""
+
+#: templates/users/notification.html:68
+msgid "SMS"
+msgstr ""
+
+#: templates/users/notification.html:73 users/models.py:88
+#, fuzzy
+#| msgid "Subscribers"
+msgid "Save subscribers"
+msgstr "Aboneler"
+
+#: templates/users/notification.html:94 users/models.py:89
+#, fuzzy
+#| msgid "Add subscribers"
+msgid "Export subscribers"
+msgstr "Abone ekle"
+
+#: templates/users/profile_update_form.html:50
+msgid "Profile photo"
+msgstr "Profil fotoğrafı"
+
+#: templates/users/profile_update_form.html:52
+msgid ""
+"Our app has built-in gravatar support and automatically displays users' "
+"avatars. If you want, you can upload your own photo or use your profile "
+"picture from Gravatar."
+msgstr ""
+"Uygulamamız yerleşik gravatar desteğine sahiptir ve kullanıcıların "
+"avatarlarını otomatik olarak görüntüler. İsterseniz kendi fotoğrafınızı "
+"yükleyebilir veya Gravatar’dan profil resminizi kullanabilirsiniz."
+
+#: templates/users/profile_update_form.html:75
+msgid "Contact Information"
+msgstr "İrtibat bilgileri"
+
+#: templates/vendors/connection_list.html:41
+#: templates/vendors/vendors_list.html:41
+msgid "To set up your connection, select your ESP/SMTP from the table below."
+msgstr "Bağlantınızı kurmak için aşağıdaki tablodan ESP/SMTP’nizi seçin."
+
+#: templates/vendors/connection_list.html:54
+msgid "Setup"
+msgstr ""
+
+#: templates/vendors/connection_list.html:55
+msgid "Create"
+msgstr ""
+
+#: templates/vendors/menu/vendors.html:4 vendors/views.py:95
+msgid "My connections"
+msgstr "Bağlantılarım"
+
+#: templates/vendors/vendors_list.html:70
+msgid "Start setup"
+msgstr "Kuruluma başla"
+
+#: users/models.py:49 users/models.py:126
+msgid "Default language"
+msgstr ""
+
+#: users/models.py:52 users/models.py:129
+msgid "current time zone"
+msgstr "geçerli zaman"
+
+#: users/models.py:55 users/models.py:132
+msgid "Select your current time zone"
+msgstr "Açılır listeden yerel saat dilimini seç"
+
+#: users/models.py:59
+msgid "profile picture"
+msgstr "profil resmi"
+
+#: users/models.py:66
+#, fuzzy
+#| msgid "Campany name"
+msgid "Company name"
+msgstr "Firma adı"
+
+#: users/models.py:67
+msgid "Job"
+msgstr ""
+
+#: users/models.py:68
+#, fuzzy
+#| msgid "Profile photo"
+msgid "Mobile phone"
+msgstr "Profil fotoğrafı"
+
+#: users/models.py:69
+msgid "Land phone"
+msgstr ""
+
+#: users/models.py:75 vendors/models.py:13
+msgid "Logo"
+msgstr ""
+
+#: users/models.py:81
+msgid "user profile"
+msgstr ""
+
+#: users/models.py:82
+msgid "user profiles"
+msgstr ""
+
+#: users/models.py:92 users/models.py:93
+msgid "User Notification"
+msgstr ""
+
+#: users/models.py:102
+msgid "Company"
+msgstr "Firma"
+
+#: users/models.py:117
+#, fuzzy
+#| msgid "Campany name"
+msgid "Company/organization name"
+msgstr "Firma adı"
+
+#: users/models.py:118
+msgid "Website URL"
+msgstr ""
+
+#: users/models.py:137 users/models.py:138
+#, fuzzy
+#| msgid "My profile"
+msgid "User company profile"
+msgstr "Profilim"
+
+#: users/models.py:165
+msgid "Kullanıcı Log"
+msgstr ""
+
+#: users/models.py:166
+msgid "Kullanıcı Logları"
+msgstr ""
+
+#: users/views.py:141
+msgid "Profil Düzenle"
+msgstr ""
+
+#: users/views.py:164 users/views.py:183 users/views.py:204 users/views.py:239
+#: users/views.py:274 users/views.py:336
+msgid "Hesap Ayarları"
+msgstr ""
+
+#: users/views.py:165 users/views.py:184 users/views.py:205 users/views.py:240
+#: users/views.py:275 users/views.py:337
+msgid "Hesabınızla ilgili tüm ayarları buradan yapabilirsiniz"
+msgstr ""
+
+#: users/views.py:378 users/views.py:407 users/views.py:436
+msgid "İşlem Başarılı"
+msgstr ""
+
+#: vendors/models.py:26 vendors/models.py:27
+msgid "Vendors"
+msgstr ""
+
+#: vendors/models.py:41 vendors/models.py:42
+#, fuzzy
+#| msgid "First name"
+msgid "From name"
+msgstr "Adı"
+
+#: vendors/models.py:59 vendors/models.py:60
+msgid "From email"
+msgstr ""
+
+#: vendors/models.py:77 vendors/models.py:78
+msgid "Reply email"
+msgstr ""
+
+#: vendors/models.py:91
+msgid "Account name"
+msgstr ""
+
+#: vendors/models.py:100 vendors/models.py:101
+msgid "Vendor connection detail"
+msgstr ""
+
+#: vendors/models.py:131
+msgid "Region Name"
+msgstr ""
+
+#: vendors/models.py:132
+msgid "Region"
+msgstr ""
+
+#: vendors/models.py:133
+msgid "TopicArn"
+msgstr ""
+
+#: vendors/models.py:134
+msgid "Protocol"
+msgstr ""
+
+#: vendors/models.py:135
+msgid "Endpoint"
+msgstr ""
+
+#: vendors/models.py:147 vendors/models.py:148
+msgid "Ses region"
+msgstr ""
+
+#: vendors/models.py:156
+msgid "Api Key"
+msgstr ""
+
+#: vendors/models.py:157
+msgid "Api Secret Key"
+msgstr ""
+
+#: vendors/models.py:160
+#, fuzzy
+#| msgid "Active"
+msgid "Is active"
+msgstr "Aktif"
+
+#: vendors/models.py:162
+msgid "AWS Lambda Process"
+msgstr ""
+
+#: vendors/models.py:163
+msgid "AWS Lambda Action"
+msgstr ""
+
+#~ msgid "Companies"
+#~ msgstr "Firmalar"
+
+#~ msgid "Persons"
+#~ msgstr "Kişiler"
+
+#~ msgid "Cancel"
+#~ msgstr "Kapat"
+
+#~ msgid ""
+#~ "<p class=\"text-sm\">We'll automatically clean duplicate instances of "
+#~ "email addresses from the list.</p><p class=\"text-sm\"> Importing does "
+#~ "not send any confirmation emails to your list, because we trust you've "
+#~ "already received permission.</p><p>  Make sure everyone on your list "
+#~ "actually signed up for it and granted you permission to email them.</p>"
+#~ msgstr ""
+#~ "<p class=text-sm>We’ll automatically clean duplicate instances of email "
+#~ "addresses from the list.</p><p class=text-sm> Importing does not send any "
+#~ "confirmation emails to your list, because we trust you’ve already "
+#~ "received permission.</p><p>  Make sure everyone on your list actually "
+#~ "signed up for it and granted you permission to email them.</p>"
+
+#~ msgid "Employees"
+#~ msgstr "Çalışanlar"
+
+#~ msgid "Tax"
+#~ msgstr "Vergi no"
+
+#~ msgid "Tax Administration"
+#~ msgstr "Vergi dairesi"
+
+#~ msgid "Bill type"
+#~ msgstr "Fatura tipi"
+
+#~ msgid "Phone business"
+#~ msgstr "İş telefonu"
+
+#~ msgid "Phone business internal"
+#~ msgstr "Dahili no"
+
+#~ msgid "Phone gsm"
+#~ msgstr "Cep telefonu"
+
+#~ msgid "Reference"
+#~ msgstr "Referans"
+
+#~ msgid "Person title"
+#~ msgstr "Ünvan"
+
+#~ msgid "Email personal"
+#~ msgstr "Şahsi email"
+
+#~ msgid "Phone personal"
+#~ msgstr "Şahsi telefon"
+
+#~ msgid "Note"
+#~ msgstr "Not"

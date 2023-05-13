@@ -1,0 +1,136 @@
+{% extends "base_basic.html" %}
+{% load static i18n widget_tweaks %}
+
+{% load account  %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<div class="px-5 py-5 p-lg-0 h-screen bg-surface-secondary d-flex flex-column justify-content-center">
+  <div class="d-flex justify-content-center">
+      <div class="col-12 col-md-9 col-lg-6 min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative">
+          <div class="row">
+              <div class="col-lg-10 col-md-9 col-xl-7 mx-auto">
+                  
+                
+                <div class="text-center mb-12">
+                     
+                      <h1 class="ls-tight font-bolder mt-6">
+                         {% trans "Create your account" %}
+                      </h1>
+                  </div>
+                  <form method="post" action="{% url 'account_signup' %}" novalidate>
+                    {% comment %} {{ form.as_p }} {% endcomment %}
+                    {% csrf_token %}
+                    {% for hidden_field in form.hidden_fields %}
+                      {{ hidden_field }}
+                    {% endfor %}
+    
+                    {% if form.non_field_errors %}
+                    
+               
+                    <div class="alert alert-danger mb-3 text-sm" role="alert">
+                        {% for error in form.non_field_errors %}
+                          {{ error }}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+    
+                      <div class="mb-5">
+                          <label class="form-label" for="email">{% trans "Email" %}</label>
+                          {% render_field form.email class="form-control" %}
+
+                            {% if form.email.errors %}
+                                <ul class="form-errors text-danger text-sm">
+                                    {% for error in form.email.errors %}
+                                        <li>{{ error|escape }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                      </div>
+                      <div class="mb-5">
+                        <label class="form-label" for="email">{% trans "Username" %}</label>
+                        {% render_field form.username class="form-control" %}
+
+                          {% if form.username.errors %}
+                              <ul class="form-errors text-danger text-sm">
+                                  {% for error in form.username.errors %}
+                                      <li>{{ error|escape }}</li>
+                                  {% endfor %}
+                              </ul>
+                          {% endif %}
+                      </div>
+                      <div class="mb-5">
+                        <label class="form-label" for="email">{% trans "Password" %}</label>
+                        {% render_field form.password1 class="form-control" %}
+
+                          {% if form.password1.errors %}
+                              <ul class="form-errors text-danger text-sm">
+                                  {% for error in form.password1.errors %}
+                                      <li>{{ error|escape }}</li>
+                                  {% endfor %}
+                              </ul>
+                          {% endif %}
+                      </div>
+                      <div class="mb-5">
+                        <label class="form-label" for="email">{% trans "Password" %}</label>
+                        {% render_field form.password2 class="form-control" %}
+
+                          {% if form.password2.errors %}
+                              <ul class="form-errors text-danger text-sm">
+                                  {% for error in form.password2.errors %}
+                                      <li>{{ error|escape }}</li>
+                                  {% endfor %}
+                              </ul>
+                          {% endif %}
+                      </div>
+
+                     
+                      <div class="mb-5">
+                        <div class="form-check">
+                          {% render_field form.is_privacy class="form-check-input" id="is_privacy" %}
+                         
+                            <label class="form-check-label font-semibold text-muted" for="is_privacy">
+                              
+                             
+                              {% blocktrans %} By creating an account means you agree to the <a href="#" class="text-warning text-sm font-semibold">Terms and Conditions</a> and our <a href="#" class="text-warning text-sm font-semibold">Privacy Policy</a>{% endblocktrans %}
+                            </label>
+                          </div>
+                          {% if form.is_privacy.errors %}
+                          <ul class="form-errors text-danger text-sm">
+                              {% for error in form.is_privacy.errors %}
+                                  <li>{{ error|escape }}</li>
+                              {% endfor %}
+                          </ul>
+                      {% endif %}
+                      </div>
+                     
+                      <div>
+                        <button class="btn btn-primary w-full" type="submit">{% trans "Sign Up" %}</button>
+                      </div>
+                  </form>
+                 
+                  
+                  <div class="my-6">
+                    <small> 
+                      {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}" class="text-warning text-sm font-semibold">sign in</a>.{% endblocktrans %}
+                     
+                    </small>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+{% block templateCSS %}
+
+
+{% endblock %}

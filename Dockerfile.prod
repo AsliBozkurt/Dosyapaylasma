@@ -1,0 +1,73 @@
+# pull official base image
+FROM python:3.10.2-slim as builder
+
+# set work directory
+WORKDIR /usr/src/core_app
+
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN apt-get update && apt-get install -qq -y \
+    build-essential libpq-dev libffi-dev --no-install-recommends git \
+    python3-dev python3-setuptools
+
+# lint
+RUN pip install --upgrade pip
+
+COPY . /usr/src/app/
+
+
+# install dependencies
+COPY ./req_prod.txt .
+RUN pip wheel --no-cache-dir --no-deps --wheel-dir /usr/src/core_app/wheels -r req_prod.txt
+
+
+#########
+# FINAL #
+#########
+
+# pull official base image
+FROM python:3.10.2-slim
+
+# create directory for the app user
+RUN mkdir -p /home/core_app
+
+# create the app user
+RUN groupadd -r app && useradd -r app -g app
+
+# create the appropriate directories
+ENV HOME=/home/core_app
+ENV APP_HOME=/home/core_app/web
+RUN mkdir $APP_HOME
+#RUN mkdir /d_log/
+WORKDIR $APP_HOME
+
+# install dependencies
+RUN apt-get update && apt-get install -qq -y \
+    build-essential libpq-dev libffi-dev --no-install-recommends git \
+    python3-dev python3-setuptools
+
+COPY --from=builder /usr/src/core_app/wheels /wheels
+COPY --from=builder /usr/src/core_app/req_prod.txt .
+RUN pip install --upgrade pip
+RUN pip install --no-cache /wheels/*
+
+# copy entrypoint-prod.sh
+COPY ./entrypoint.prod.sh $APP_HOME
+
+# copy project
+COPY . $APP_HOME
+
+# chown all the files to the app user
+RUN chown -R app:app $APP_HOME
+
+# change to the app user
+# external volume bağlanamıyorum. bu nedenle 
+# USER app iptal ettim. 
+#USER app
+
+
+
+# run entrypoint.prod.sh
+ENTRYPOINT ["/home/core_app/web/entrypoint.prod.sh"]

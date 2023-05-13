@@ -1,0 +1,53 @@
+{
+  "status": "done",
+  "assets": {
+    "css/main.ef034703.css": {
+      "name": "css/main.ef034703.css",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/css/main.ef034703.css",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/css/main.ef034703.css"
+    },
+    "js/main.343ee2b8.js": {
+      "name": "js/main.343ee2b8.js",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/js/main.343ee2b8.js",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/js/main.343ee2b8.js"
+    },
+    "css/user_profile_avatar.ef034703.css": {
+      "name": "css/user_profile_avatar.ef034703.css",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/css/user_profile_avatar.ef034703.css",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/css/user_profile_avatar.ef034703.css"
+    },
+    "js/user_profile_avatar.c30710d9.js": {
+      "name": "js/user_profile_avatar.c30710d9.js",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/js/user_profile_avatar.c30710d9.js",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/js/user_profile_avatar.c30710d9.js"
+    },
+    "js/chunk-vendors.aab87a2c.js": {
+      "name": "js/chunk-vendors.aab87a2c.js",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/js/chunk-vendors.aab87a2c.js",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/js/chunk-vendors.aab87a2c.js"
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/favicon.ico",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/favicon.ico"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/Users/macbook/Documents/code/okul_proje/proje_1/static/vue/index.html",
+      "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/index.html"
+    }
+  },
+  "chunks": {
+    "main": [
+      "js/chunk-vendors.aab87a2c.js",
+      "css/main.ef034703.css",
+      "js/main.343ee2b8.js"
+    ],
+    "user_profile_avatar": [
+      "js/chunk-vendors.aab87a2c.js",
+      "css/user_profile_avatar.ef034703.css",
+      "js/user_profile_avatar.c30710d9.js"
+    ]
+  },
+  "publicPath": "https://aslkpl.s3.eu-central-1.amazonaws.com/static/vue/"
+}

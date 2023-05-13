@@ -1,0 +1,68 @@
+{% load static i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+{% get_language_info for LANGUAGE_CODE as lang %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+<!doctype html>
+<html lang="{{LANGUAGE_CODE}}">
+    <head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark light">
+<title>{% block head_title %}{% endblock %}</title>
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/main.css' %}">
+
+
+<!-- Utilities -->
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/utilities.css' %}">
+
+{% block templateCSS %}{% endblock %}
+
+{% include "includes/global_css.html"%}
+
+
+
+</head>
+<body>
+
+<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+
+  {% include "includes/sidebar.html" %}
+
+  <!-- Content -->
+  <div class="flex-lg-1 h-screen overflow-y-lg-auto">
+
+    
+    
+      {% include "includes/message.html" %}
+      {% comment %} {% include "includes/content_header.html" %} {% endcomment %}
+    
+
+      <!-- start Content -->
+      {% block content %}
+      {% endblock %}
+      <!-- end Content -->
+  </div> 
+
+
+
+
+</div> <!-- d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary -->
+   
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Scripts -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+
+</body>
+</html>

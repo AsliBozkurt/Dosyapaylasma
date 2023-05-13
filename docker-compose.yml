@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+    web:
+        build:
+            context: .
+        command: python manage.py runserver 0.0.0.0:8100
+        volumes:
+            - .:/code
+        ports:
+            - 8100:8100
+        env_file:
+            - ./.env.dev
+
+    db:
+        image: postgres:13.0-alpine
+        volumes:
+            - postgres_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=proje
+            - POSTGRES_PASSWORD=proje
+            - POSTGRES_DB=proje
+
+volumes:
+    postgres_data:

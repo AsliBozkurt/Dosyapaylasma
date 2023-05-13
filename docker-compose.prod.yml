@@ -1,0 +1,47 @@
+version: '3.3'
+
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile.prod
+        command: gunicorn core_app.wsgi:application --bind 0.0.0.0:8300
+        volumes:
+            - static_volume:/home/core_app/web/static
+        expose:
+            - 8300
+        env_file:
+            - ./.env.prod
+
+    db:
+        image: postgres:13.0-alpine
+        volumes:
+            - postgres_data:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=proje
+            - POSTGRES_PASSWORD=proje
+            - POSTGRES_DB=proje
+
+    nginx:
+        build: ./nginx
+        volumes:
+            - static_volume:/home/core_app/web/static
+        depends_on:
+            - web
+        expose:
+            - "80"
+        environment:
+            - VIRTUAL_HOST=dosya.sinan.org
+            - VIRTUAL_NETWORK=nginx-proxy
+            - VIRTUAL_PORT=80
+            - LETSENCRYPT_HOST=dosya.sinan.org
+            - LETSENCRYPT_EMAIL=aslibozkurt5858@gmail.com
+
+networks:
+    default:
+        external:
+            name: nginx-proxy
+
+volumes:
+    static_volume:
+    postgres_data:

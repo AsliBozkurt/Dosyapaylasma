@@ -1,0 +1,99 @@
+{% extends "base_basic.html" %}
+{% load static i18n widget_tweaks %}
+
+{% load account  %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+<div class="px-5 py-5 p-lg-0 h-screen bg-surface-secondary d-flex flex-column justify-content-center">
+  <div class="d-flex justify-content-center">
+      <div class="col-12 col-md-9 col-lg-6 min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative">
+          <div class="row">
+              <div class="col-lg-10 col-md-9 col-xl-7 mx-auto">
+                  
+                
+                <div class="text-center mb-12">
+                     
+                      <h1 class="ls-tight font-bolder mt-6">
+                         {% trans "Welcome" %}
+                      </h1>
+                  </div>
+                  <form method="post" action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {% for hidden_field in form.hidden_fields %}
+                      {{ hidden_field }}
+                    {% endfor %}
+    
+                    {% if form.non_field_errors %}
+                    
+                    <div class="alert alert-danger mb-3 text-sm" role="alert">
+                        {% for error in form.non_field_errors %}
+                          {{ error }}
+                        {% endfor %}
+                      </div>
+                    {% endif %}
+    
+                      <div class="mb-5">
+                          <label class="form-label" for="email">{% trans "Username or e-mail" %}</label>
+                          {% render_field form.login class="form-control" tabindex=1 %}
+
+                            {% if form.login.errors %}
+                                <ul class="form-errors text-danger text-sm">
+                                    {% for error in form.login.errors %}
+                                        <li>{{ error|escape }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                          
+                      </div>
+                      <div class="mb-5">
+                          <div class="d-flex align-items-center justify-content-between">
+                              <div>
+                                  <label class="form-label" for="password">{% trans "Password" %}</label>
+                              </div>
+                              <div class="mb-2">
+                                  <a href="{% url 'account_reset_password' %}" class="text-sm text-muted text-primary-hover text-underline">{% trans "Forgot Password?" %}</a>
+                              </div>
+                          </div>
+                          {% render_field form.password class="form-control"   tabindex=2  %}
+                          {% if form.password.errors %}
+                              <ul class="form-errors text-danger text-sm">
+                                  {% for error in form.password.errors %}
+                                      <li>{{ error|escape }}</li>
+                                  {% endfor %}
+                              </ul>
+                          {% endif %}
+                         
+                      </div>
+                     
+                     
+                      <div>
+                        <button class="btn btn-primary w-full" type="submit">{% trans "Login" %}</button>
+                      </div>
+                  </form>
+                 
+                  
+                  <div class="my-6">
+                    <small> 
+                      {% blocktrans %}If you have not created an account yet, then please
+                      <a href="{{ signup_url }}" class="text-warning text-sm font-semibold">sign up</a> first.{% endblocktrans %} 
+                    </small>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
+
+
+{% block templateCSS %}
+
+
+{% endblock %}

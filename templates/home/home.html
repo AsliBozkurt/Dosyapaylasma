@@ -1,0 +1,224 @@
+{% extends "base.html" %}
+
+
+{% load static i18n %}
+
+{% block head_title %}Dashboard{% endblock %}
+
+{% block side_bar %}
+{% include "includes/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+
+ <!-- HEADER BURADAN BAŞLIYOR -->
+<header>
+          <div class="container-fluid">
+            <div class="border-bottom pt-6">
+              <div class="row align-items-center">
+                <div class="col-sm col-12">
+                  <!-- Title -->
+                  <h1 class="h2 ls-tight">
+                    <span class="d-inline-block me-3">👋</span>Merhaba {{request.user.username}}
+                  </h1>
+                </div>
+               
+              
+            </div>
+          </div>
+</header>
+
+<div class="container-fluid">
+
+<div class="row g-6 mt-3">
+  <div class="col-xl-12">
+    <div class="vstack gap-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="mb-3">Projenin Amacı</h5>
+          <p class="text-sm lh-relaxed mb-4">Bu proje kullanıcıların dosyalarını Public (Genel) ve Private (Özel) olarak paylaşmalarını sağlar</p>
+
+          <div>
+          <hr>
+            <h6 class="font-semibold mb-5">Bulut Özellikleri</h6>
+            <div class="list-group list-group-flush list-group-borderless">
+              <div class="list-group-item px-2 py-0">
+                <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Alt yapı Amazon AWS de bulunmaktadır.</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://aws.amazon.com/tr/" target="_blank">https://aws.amazon.com/tr/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Sunucu EC2</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://aws.amazon.com/tr/ec2/" target="_blank">https://aws.amazon.com/tr/ec2/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Dosya Depolama (Storage)</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://aws.amazon.com/tr/s3/" target="_blank">https://aws.amazon.com/tr/s3/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+             
+              
+              
+              
+            </div>
+          </div>
+
+
+          <hr>
+            <h6 class="font-semibold mb-5">Yazılım ve Veritabanı Altyapısı</h6>
+            <div class="list-group list-group-flush list-group-borderless">
+              <div class="list-group-item px-2 py-0">
+                <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Django (Python)</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://www.djangoproject.com/" target="_blank">https://www.djangoproject.com/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Vue (Javascript)</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://vuejs.org/" target="_blank">https://vuejs.org/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Veri Tabanı (PostgreSQL)</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://www.postgresql.org/" target="_blank">https://www.postgresql.org/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <hr>
+            <h6 class="font-semibold mb-5">Deploy (Dağıtım)</h6>
+            <div class="list-group list-group-flush list-group-borderless">
+              <div class="list-group-item px-2 py-0">
+                <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Docker</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://www.docker.com/" target="_blank">https://www.docker.com/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                 <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Nginx</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://www.nginx.com/" target="_blank">https://www.nginx.com/</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                 <div class="border-start">
+                  <div class="d-flex ms-n2 pb-6">
+                    <div class="flex-none me-3">
+                      <div class="icon icon-shape text-sm w-4 h-4 bg-success rounded-circle"></div>
+                    </div>
+                    <div>
+                      <p  class="h6 font-semibold lh-none text-heading  d-inline-block mb-1">Nginx ReverseProxy - Letsencrypt</p>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://github.com/nginx-proxy/acme-companion" target="_blank">https://github.com/nginx-proxy/acme-companion</a></small>
+                      </div>
+                      <div>
+                        <small class="text-xs text-muted"><a href="https://letsencrypt.org" target="_blank">https://letsencrypt.org</a></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+             
+              
+              
+              
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+ 
+</div>
+
+</div>
+
+
+
+
+{% endblock %}
+
+
+{% block templateCSS %}
+
+{% endblock %}
+
+{% block templateJS %}{% endblock %}
+
+

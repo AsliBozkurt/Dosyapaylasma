@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% load static i18n %}
+
+{% block head_title %}Dosya Paylaşımı{% endblock %}
+
+{% block side_bar %}
+{% include "includes/sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+              <div id="app">
+                <app></app>
+              </div>
+
+
+
+
+
+{% render_bundle 'main' "js" %}
+
+
+       
+
+
+{% endblock %}
+
+
+{% block templateCSS %}
+{% render_bundle 'main' 'css' %}
+{% endblock %}
+
+{% block templateJS %}{% endblock %}
+
